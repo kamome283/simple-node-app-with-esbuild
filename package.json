@@ -5,11 +5,15 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.mjs",
+    "start:cached": "node --env-file-if-exists=.env dist/index.js",
+    "start": "npm run build && npm run start:cached"
   },
   "dependencies": {
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "esbuild": "0.27.2"
+  }
 }
