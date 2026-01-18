@@ -1,0 +1,30 @@
+# VSCode
+.vscode/
+
+# WebStorm
+.idea/
+
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Environment variables
+.env
+
+# Distribution
+dist/
