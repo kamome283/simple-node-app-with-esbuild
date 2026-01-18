@@ -1,0 +1,23 @@
+{
+  "name": "simple-node-app-with-esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "25.x"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "start:cached": "node --env-file-if-exists=.env dist/index.js",
+    "start": "npm run build && npm run start:cached"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "esbuild": "0.27.2",
+    "@types/node": "25.0.9"
+  }
+}
