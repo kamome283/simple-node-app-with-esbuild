@@ -6,6 +6,9 @@
   "author": "",
   "type": "commonjs",
   "main": "dist/index.js",
+  "engines": {
+    "node": "25.x"
+  },
   "scripts": {
     "build": "node build.mjs",
     "start:cached": "node --env-file-if-exists=.env dist/index.js",
@@ -14,6 +17,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "esbuild": "0.27.2"
+    "esbuild": "0.27.2",
+    "@types/node": "25.0.9"
   }
 }
