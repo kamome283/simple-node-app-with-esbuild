@@ -21,7 +21,7 @@ try {
 }
 
 function printErrorDescription(error) {
-    if (error?.message === undefined) {
+    if (error?.message !== undefined) {
         console.error(error.message);
     } else {
         console.error(error);
