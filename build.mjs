@@ -9,6 +9,9 @@ try {
         outfile: "dist/index.js",
         sourcemap: true,
         minify: true,
+        external: [
+            "node:*",
+        ]
     });
     console.log("✅ ビルド成功");
 } catch (error) {
