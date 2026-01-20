@@ -5,7 +5,7 @@ try {
         entryPoints: ["src/index.ts"],
         bundle: true,
         platform: "node",
-        format: "cjs",
+        format: "esm",
         outfile: "dist/index.js",
         sourcemap: true,
         minify: true,
